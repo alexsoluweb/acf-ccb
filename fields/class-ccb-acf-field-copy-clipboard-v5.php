@@ -50,7 +50,7 @@ if ( ! class_exists( 'ccb_acf_field_copy_clipboard' ) ) :
 			*/
 
 			$this->defaults = array(
-				'read_only' => '0',
+				'readonly' => '0',
 			);
 
 			/*
@@ -101,7 +101,7 @@ if ( ! class_exists( 'ccb_acf_field_copy_clipboard' ) ) :
 					'label'        => __( 'Read Only', 'acf-ccb' ),
 					'instructions' => __( 'Render this field in read only mode in the front end', 'acf-ccb' ),
 					'type'         => 'true_false',
-					'name'         => 'read_only',
+					'name'         => 'readonly',
 					'ui'           => '1',
 				)
 			);
@@ -125,7 +125,7 @@ if ( ! class_exists( 'ccb_acf_field_copy_clipboard' ) ) :
 		*  @return  n/a
 		*/
 		function render_field( $field ) {
-			$readonly = boolval( $field['read_only'] ) === true ? " readonly='readonly'" : '';
+			$readonly = boolval( $field['readonly'] ) === true ? " readonly='readonly'" : '';
 			?>
 			<div class="acf-ccb-wrapper">
 				<input 
