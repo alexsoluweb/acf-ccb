@@ -4,6 +4,11 @@ Contributors: Alexandre gravel-Ménard
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+== Description ==
+
+A simple text filed with a copy to clipboard button.
+
+
 = Compatibility =
 
 This ACF field type is compatible with:
