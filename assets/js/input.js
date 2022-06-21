@@ -20,7 +20,11 @@
 			copyText.select();
 			copyText.setSelectionRange(0, 99999);
 			navigator.clipboard.writeText(copyText.value);
+			var oldtext = $(".acf-ccb-btn-txt").text();
 			$(".acf-ccb-btn-txt").text(acf_ccb.txt_copied);
+			setTimeout( function(){
+				$(".acf-ccb-btn-txt").text(oldtext);
+			}, 4000, oldtext);
 		});
 		
 	}
