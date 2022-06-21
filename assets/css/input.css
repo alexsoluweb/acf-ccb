@@ -1,9 +1,4 @@
-.acf-ccb-btn-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .acf-ccb-btn-wrapper .acf-ccb-tooltip {
+.acf-ccb-btn-wrapper .acf-ccb-tooltip {
     visibility: hidden;
     width: 140px;
     background-color: #555;
@@ -20,7 +15,7 @@
     transition: opacity 0.3s;
   }
   
-  .acf-ccb-btn-wrapper .acf-ccb-tooltip::after {
+.acf-ccb-btn-wrapper .acf-ccb-tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -29,12 +24,12 @@
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+}
   
-  .acf-ccb-btn-wrapper:hover .acf-ccb-tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
+.acf-ccb-btn-wrapper:hover .acf-ccb-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
 .acf-ccb-wrapper{
     display: flex;
@@ -57,6 +52,7 @@
     width: 10% !important;
     height: 100%;
     display: inline-block;
+    position: relative;
 }
 
 .acf-ccb-button{
